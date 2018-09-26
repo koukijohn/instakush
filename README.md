@@ -1,26 +1,7 @@
-<img src="https://github.com/jarehec/AirBnB_clone_v3/blob/master/dev/HBTN-hbnb-Final.png" width="160" height=auto />
+<img src="https://raw.githubusercontent.com/GucciGerm/Instakush_pitch/master/images/Instakushlogo_v1.png" width="160" height=auto />
 
-# AirBnB Clone: Phase # 3
+# InstaKush
 
-: API with Swagger
-
-## Description
-
-Project attempts to clone the the AirBnB application and website, including the
-database, storage, RESTful API, Web Framework, and Front End.  Currently the
-application is designed to run with 2 storage engine models:
-
-* File Storage Engine:
-
-  * `/models/engine/file_storage.py`
-
-* Database Storage Engine:
-
-  * `/models/engine/db_storage.py`
-
-  * To Setup the DataBase for testing and development, there are 2 setup
-  scripts that setup a database with certain privileges: `setup_mysql_test.sql`
-  & `setup_mysql_test.sql` (for more on setup, see below).
 
   * The Database uses Environmental Variables for tests.  To execute tests with
   the environmental variables prepend these declarations to the execution
@@ -86,7 +67,7 @@ the datbase.
 
   * Usage: `$ cat dev/setup.sql | mysql -uroot -p`
 
-* **`setup_mysql_dev.sql`:** initialiezs dev database with mysql for testing
+* **`setup_mysql_dev.sql`:** initializes dev database with mysql for testing
 
   * Usage: `$ cat setup_mysql_dev.sql | mysql -uroot -p`
 
@@ -171,19 +152,19 @@ HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_test_db HBNB_TYPE_STORAGE=db \
 #### For a detailed description of all tests, run these commands in the CLI:
 
 ```
-(hbnb) help help
+(instakush) help help
 List available commands with "help" or detailed help with "help cmd".
-(hbnb) help
+(instakush) help
 
 Documented commands (type help <topic>):
 ========================================
 Amenity    City  Place   State  airbnb  create   help  show
 BaseModel  EOF   Review  User   all     destroy  quit  update
 
-(hbnb) help User
+(instakush) help User
 class method with .function() syntax
         Usage: User.<command>(<id>)
-(hbnb) help create
+(instakush) help create
 create: create [ARG] [PARAM 1] [PARAM 2] ...
         ARG = Class Name
         PARAM = <key name>=<value>
@@ -212,14 +193,8 @@ github repo
 
 ## Authors
 
-* MJ Johnson, [@mj31508](https://github.com/mj31508)
-* David John Coleman II, [davidjohncoleman.com](http://www.davidjohncoleman.com/) | [@djohncoleman](https://twitter.com/djohncoleman)
-* Kimberly Wong, [kjowong](https://github.com/kjowong) | [@kjowong](https://twitter.com/kjowong) | [kjowong@gmail.com](kjowong@gmail.com)
-* Carrie Ybay, [hicarrie](https://github.com/hicarrie) | [@hicarrie_](https://twitter.com/hicarrie_)
-* Jared Heck, [jarehec](https://github.com/jarehec) | [@jarehec](https://twitter.com/jarehec)
 * John Dinh, [koukijohn](https://github.com/koukijohn)
-* Darnell Garvey, [tragic86](https://github.com/tragic86)
-* Cody Paral, [syssos](https://github.com/syssos)
+* Germaine Dinh [GucciGerm](https://github.com/GucciGerm)
 
 ## License
 
