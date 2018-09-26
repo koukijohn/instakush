@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/GucciGerm/Instakush_pitch/master/images/Instakushlogo_v1.png" width="160" height=auto />
 
-# InstaKush hi baby
+# InstaKush
 
 
   * The Database uses Environmental Variables for tests.  To execute tests with
