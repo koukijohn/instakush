@@ -10,7 +10,7 @@ class HBNBCommand(cmd.Cmd):
     """
     Command inerpreter class
     """
-    prompt = '(hbnb) '
+    prompt = '(instakush) '
     ERR = [
         '** class name missing **',
         '** class doesn\'t exist **',
