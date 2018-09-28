@@ -35,11 +35,11 @@ class DBStorage:
         """
         self.__engine = create_engine(
             'mysql+mysqldb://{}:{}@{}/{}'.format(
-                os.environ.get('HBNB_MYSQL_USER'),
-                os.environ.get('HBNB_MYSQL_PWD'),
-                os.environ.get('HBNB_MYSQL_HOST'),
-                os.environ.get('HBNB_MYSQL_DB')))
-        if os.environ.get("HBNB_ENV") == 'test':
+                os.environ.get('instakush_MYSQL_USER'),
+                os.environ.get('instakush_MYSQL_PWD'),
+                os.environ.get('instakush_MYSQL_HOST'),
+                os.environ.get('instakush_MYSQL_DB')))
+        if os.environ.get("instakush_ENV") == 'test':
             Base.metadata.drop_all(self.__engine)
 
     def all(self, cls=None):
