@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Command interpreter for Holberton AirBnB project
+Command interpreter for the Instakush web app
 """
 import cmd
 from models import storage, CNC
 
 
-class HBNBCommand(cmd.Cmd):
+class instakushCommand(cmd.Cmd):
     """
     Command line interpreter class
     """
@@ -57,13 +57,13 @@ class HBNBCommand(cmd.Cmd):
         """
         error = 0
         if len(arg) == 0:
-            print(HBNBCommand.ERR[0])
+            print(instakushCommand.ERR[0])
             error = 1
         else:
             if isinstance(arg, list):
                 arg = arg[0]
             if arg not in CNC.keys():
-                print(HBNBCommand.ERR[1])
+                print(instakushCommand.ERR[1])
                 error = 1
         return error
 
@@ -74,7 +74,7 @@ class HBNBCommand(cmd.Cmd):
         error = 0
         if (len(arg) < 2):
             error += 1
-            print(HBNBCommand.ERR[2])
+            print(instakushCommand.ERR[2])
         if not error:
             storage_objs = storage.all()
             for key, value in storage_objs.items():
@@ -82,20 +82,20 @@ class HBNBCommand(cmd.Cmd):
                 if temp_id == arg[1] and arg[0] in key:
                     return error
             error += 1
-            print(HBNBCommand.ERR[3])
+            print(instakushCommand.ERR[3])
         return error
 
-    def do_airbnb(self, arg):
-        """airbnb: airbnb
+    def do_instakush(self, arg):
+        """instakush: instakush
         SYNOPSIS: Command changes prompt string"""
         print("                      __ ___                        ")
         print("    _     _  _ _||\ |/  \ | _  _  _|_|_     _  _ _| ")
         print("|_||_)\)/(_|| (_|| \|\__/ || )(_)| |_| )\)/(_|| (_| ")
         print("   |                                                ")
-        if HBNBCommand.prompt == '(hbnb) ':
-            HBNBCommand.prompt = " /_ /_ _  /_\n/ //_// //_/ "
+        if instakushCommand.prompt == '(instakush) ':
+            instakushCommand.prompt = " /_ /_ _  /_\n/ //_// //_/ "
         else:
-            HBNBCommand.prompt = '(hbnb) '
+            instakushCommand.prompt = '(instakush) '
         arg = arg.split()
         error = self.__class_err(arg)
 
@@ -275,9 +275,9 @@ class HBNBCommand(cmd.Cmd):
             if arg[1] in k and arg[0] in k:
                 key = k
         if len(arg) < 3:
-            print(HBNBCommand.ERR[4])
+            print(instakushCommand.ERR[4])
         elif len(arg) < 4:
-            print(HBNBCommand.ERR[5])
+            print(instakushCommand.ERR[5])
         else:
             return [1, arg, d, storage_objs, key]
         return [0]
@@ -382,4 +382,4 @@ if __name__ == '__main__':
     """
     MAIN Loop
     """
-    HBNBCommand().cmdloop()
+    instakushCommand().cmdloop()
