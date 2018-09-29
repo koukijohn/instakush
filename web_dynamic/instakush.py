@@ -24,7 +24,7 @@ def teardown_db(exception):
 
 
 @app.route('/')
-def instakush_filters(the_id=None):
+def instakush_home(the_id=None):
     """
     handles request to custom template with states, cities & amentities
     """

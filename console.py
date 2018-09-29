@@ -8,7 +8,7 @@ from models import storage, CNC
 
 class HBNBCommand(cmd.Cmd):
     """
-    Command inerpreter class
+    Command line interpreter class
     """
     prompt = '(instakush) '
     ERR = [
@@ -25,7 +25,7 @@ class HBNBCommand(cmd.Cmd):
         handles intro to command interpreter
         """
         print('.----------------------------.')
-        print('|    Welcome to hbnb CLI!    |')
+        print('|  Welcome to instakush CLI! |')
         print('|   for help, input \'help\'   |')
         print('|   for quit, input \'quit\'   |')
         print('.----------------------------.')
